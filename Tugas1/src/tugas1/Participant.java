@@ -22,9 +22,9 @@ public abstract class Participant {
         return this.name;
     }
     
-    public void setTotalCrew(int crew){
+    public void setTotalCrew(int crew) throws InvalidMemberException {
         if(crew <= 0){
-            throw new IllegalArgumentException("Jumlah kru tidak valid!");
+            throw new InvalidMemberException("Krunya kurang");
         }
         this.totalCrew = crew;
     }

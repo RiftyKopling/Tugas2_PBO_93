@@ -14,7 +14,7 @@ public class Soloist extends Participant{
     @Override
     public void validateCrew() throws InvalidMemberException{
         if(getTotalCrew() > 3){
-            throw new InvalidMemberException("Jumlah kru melebihi batas!");
+            throw new InvalidMemberException("Jumlah kru melebihi batas! Maksimal Crew 3");
         }
     }
     
